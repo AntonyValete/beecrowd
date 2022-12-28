@@ -1,0 +1,10 @@
+.vscode
+*.pdf
+*.txt
+test.c
+test.py
+test.js
+test.rs
+test.cpp
+*.exe
+*.url

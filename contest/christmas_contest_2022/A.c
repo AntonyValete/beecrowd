@@ -6,6 +6,27 @@
 #define AVOID '*'
 #define PASS '.'
 
+int check(char threat);
+void solve(char board[][MAX + 1], char ch, int row, int col);
+
+int main() {
+    int i, j;
+    char board[MAX][MAX + 1];
+
+    for (i = 0; i < MAX; i++) {
+        scanf("%s", board[i]);
+    }
+
+    for (i = 0; i < MAX; i++) {
+        for (j = 0; j < MAX; j++) {
+            solve(board, board[i][j], i, j);
+        }
+        putchar('\n');
+    }
+    
+    return 0;
+}
+
 int check(char threat) {
     if (threat == AVOID)
         return 1;
@@ -37,22 +58,4 @@ void solve(char board[][MAX + 1], char ch, int row, int col) {
             break;
         default: putchar('K');
     }
-}
-
-int main() {
-    int i, j;
-    char board[MAX][MAX + 1];
-
-    for (i = 0; i < MAX; i++) {
-        scanf("%s", board[i]);
-    }
-
-    for (i = 0; i < MAX; i++) {
-        for (j = 0; j < MAX; j++) {
-            solve(board, board[i][j], i, j);
-        }
-        putchar('\n');
-    }
-    
-    return 0;
 }

@@ -10,7 +10,7 @@ typedef struct ornament {
     int acceptance;
 } ornament;
 
-int compare(const void *a, const void *b);
+int compare(const void *a_ptr, const void *b_ptr);
 void output(ornament *ornaments, int budget);
 
 int main() {
@@ -43,8 +43,8 @@ int main() {
 }
 
 int compare(const void *a_ptr, const void *b_ptr) {
-    ornament a = *(ornament *) a_ptr;
-    ornament b = *(ornament *) b_ptr;
+    const ornament a = *(ornament *) a_ptr;
+    const ornament b = *(ornament *) b_ptr;
 
     if (a.price == b.price)
         return b.acceptance - a.acceptance;

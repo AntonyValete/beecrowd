@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository is dedicated to CP (competitive programming) at the website beecrowd (<a href="https:\\www.beecrowd.com.br">https:\\\\www.beecrowd.com.br</a>)
+This repository is dedicated to CP (competitive programming) at the website beecrowd (https://www.beecrowd.com.br)
 
 I'll push to here all the solutions that get accept at the website.
 

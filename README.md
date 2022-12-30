@@ -1,6 +1,6 @@
 # URI-Online-Judge (beecrowd)
 
-![beecrowd logo](.\assets\img\beecrowd__roxoHorClean-small-PNG-1.png)
+![beecrowd logo](./assets/img/beecrowd__roxoHorClean-small-PNG-1.png)
 
 ## Description
 
